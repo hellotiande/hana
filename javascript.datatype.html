@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Data type</h1>
+        <h2>Number</h2>
+        1+1 <br>
+
+        <!-- html은 정적이야 1+1 그대로  출력 -->
+        <script>
+            document.write(1+1);
+            // 자바스크립트는 동적이야 2로 계산되서 나와
+            // 여기서 +는 산술연산자
+            document.write('<br>');
+            document.write(Math.floor(1.9)+'<br>'); //floor 버림
+            document.write(Math.ceil(1.1)+'<br>'); //ceil 올림
+        </script>
+        <h2>문자열(String)</h2>
+        <script>
+            document.write('hello world<br>');
+            document.write('1');
+            document.write('<br>');
+            document.write('1'+'1'+'<br>');
+            // 여기서 +는 결합연산자
+            document.write('hello world'.length);
+            document.write('hello world'.toLocaleUpperCase());
+        </script>
+    </body>
+</html>

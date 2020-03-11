@@ -1,0 +1,10 @@
+alert('hello world') // 경고창
+Math.floor(Math.random()*10)//내림, 랜덤수 뽑아
+confirm('진짜?') //confirm 확인하기 확인->true 취소->false
+prompt('password?')//입력받기
+
+alert(1);
+
+alert(2);
+
+alert(3);
