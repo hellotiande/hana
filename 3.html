@@ -3,12 +3,65 @@
 <head>
     <title>★SOOJEONG's JAVASCRIPT★</title>
     <meta charset="utf-8">
+
     <style>
         h1{font-size:50px;}
        /*h1의 폰트 사이즈 */
+       body{margin-left : 60px; 
+            margin-right : 60px;}
    </style>
+
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <script>
+        var bodytag = document.querySelector('body');
+    </script>
+  
+    
+    <input type="button" value="NIGHT" onclick="
+    alert('Good Night');
+    bodytag.style.backgroundColor='black';
+    bodytag.style.color='powderblue';
+    var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='powderblue';
+        i = i+1;}
+    ">
+    <input type="button" value="MORNING" onclick="
+     alert('Good Morning');
+      bodytag.style.backgroundColor='powderblue';
+      bodytag.style.color='black';
+      var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='black';
+        i = i+1;}
+      ">  
+     
+     <input type="button" value="NIGHT" onclick="
+     alert('Change:D')
+     if(this.value === 'NIGHT')
+     {bodytag.style.backgroundColor='black';
+      bodytag.style.color='powderblue';
+      this.value = 'MORNING';
+      var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='powderblue';
+        i = i+1;}
+    }
+      else {bodytag.style.backgroundColor='powderblue';
+      bodytag.style.color='black';
+      this.value = 'MORNING';
+      var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='black';
+        i = i+1;}
+    }
+      ">  
+<h3><공부를 하자></h3>  
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
@@ -16,13 +69,18 @@
         <li><a href="4.html">EXAMPLE</a></li>
     </ol>
     
-    <h2>JS이란 무엇인가???</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptate reprehenderit delectus, possimus architecto voluptatem consequatur iure voluptates perferendis tenetur quod debitis. Eius tempore ipsa optio, tempora ducimus facere sed.
+    <h2>JAVASCRIPT이란 무엇인가???</h2>
+    우리가 매일 접속하는 웹사이트는 크게 3가지 요소로 구성된다. ‘HTML(Hyper Text Markup Language)’, ‘CSS(Cascading Style Sheets)’, ‘자바스크립트(Javascript)’다. HTML은 웹페이지의 큰 뼈대를 제공하고, CSS는 색깔이나 글씨체와 같은 디자인 요소를 관리한다. 자바스크립트는 크로스 플랫폼(cross platform), 객체지향 스크립트 언어로 웹페이지의 동작을 담당한다. 예를 들어 자바스크립트를 이용하면 ‘버튼을 클릭하면 밑에 날짜를 보여줘’라는 식의 명령을 내릴 수 있다.
+
+자바스크립트를 이용하면 웹에 풍부한 효과를 넣을 수 있지만, 2000년대 초반만 해도 자바스크립트는 개발자들에게 무시당하는 언어였다. 별다른 기능도 없고, 성능도 별로 좋지 않았기 때문이다. 하지만 최근 몇 년 사이에 다양한 자바스크립트 프레임워크와 라이브러리가 생기면서 자바스크립트 생태계는 크게 확장되고 있으며, 그 위상도 점점 높아지고 있다.
+<br>
     <br>
+    <br>
+    ▶동영상 강의 보기<br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/PZIPsKgWJiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2><a href="https://terms.naver.com/entry.nhn?docId=3580851&cid=59088&categoryId=59096">네이버로 더 알아보기</a></h2>
+    <h3><a href="https://terms.naver.com/entry.nhn?docId=3580851&cid=59088&categoryId=59096">네이버로 더 알아보기</a></h3>
     
-    <h3><a href="index.html">뒤로가기</a></h3>
+    <h4><a href="index.html">뒤로가기</a></h4>
 </body>
 </html>
 

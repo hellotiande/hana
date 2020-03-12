@@ -1,6 +1,4 @@
-﻿<title>★SOOJEONG's HTML★</title>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>★SOOJEONG's_HTML★</title>
@@ -8,10 +6,64 @@
     <style>
         h1{font-size:50px;}
        /*h1의 폰트 사이즈 */
+       body{margin-left : 60px; 
+            margin-right : 60px;}
+        
    </style>
+   
 </head>
 <body>
+    
     <h1><a href="index.html">WEB</a></h1>
+    <script>
+        var bodytag = document.querySelector('body');
+    </script>
+   
+    
+    <input type="button" value="NIGHT" onclick="
+    alert('Good Night');
+    bodytag.style.backgroundColor='black';
+    bodytag.style.color='powderblue';
+    var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='powderblue';
+        i = i+1;}
+    ">
+    <input type="button" value="MORNING" onclick="
+     alert('Good Morning');
+      bodytag.style.backgroundColor='powderblue';
+      bodytag.style.color='black';
+      var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='black';
+        i = i+1;}
+      ">  
+     
+     <input type="button" value="NIGHT" onclick="
+     alert('Change:D')
+     if(this.value === 'NIGHT')
+     {bodytag.style.backgroundColor='black';
+      bodytag.style.color='powderblue';
+      this.value = 'MORNING';
+      var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='powderblue';
+        i = i+1;}
+    }
+      else {bodytag.style.backgroundColor='powderblue';
+      bodytag.style.color='black';
+      this.value = 'MORNING';
+      var as = document.querySelectorAll('a');
+        var i = 0;
+        while(i < as.length)
+        {as[i].style.color='black';
+        i = i+1;}
+    }
+      ">  
+<h3><공부를 하자></h3>  
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
@@ -20,11 +72,17 @@
     </ol>
     <br>
     <h2>HTML이란 무엇인가???</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio, voluptate iure consectetur delectus iusto fuga quas qui aperiam ullam ducimus! Repellat autem laboriosam sapiente quidem dignissimos accusamus, voluptatem hic?
+    HTML(Hyper Text Markup Language)은 가장 단순한 형태의 웹 언어이다. 웹 서버에 HTML 문서를 저장하고 있다가 클라이언트가 특정 HTML 페이지를 요청하면 해당 HTML 문서를 클라이언트로 전송한다. 그러면 클라이언트는 이 웹 페이지를 해석하여 웹 브라우저에 표현해 주는데 이런 웹 페이지를 정적인(Static) 웹 페이지라고 한다.
+    초기의 웹 서비스는 정적인 웹 페이지가 대부분이었다. 대학에서 교양 과목으로 처음 홈페이지를 만들어볼 때도 대부분 이런 정적인 웹 페이지를 만든다. 정적인 웹 페이지는 고객의 취향이나 변화에 적응할 수 없고 새로운 것을 추가하는 데 많은 시간이 걸린다는 단점이 있지만 보안에는 장점이 많다.
 
+웹 해킹은 웹 브라우저와 웹 서버 사이에 전달되는 값들의 변조를 통해 웹 서버의 설정이나 로직을 바꾸는데, 정적인 웹 페이지는 '바꿀 수 있는 가능성'이 매우 낮기 때문이다.
+<br>
+
+   
     <br>
+    ▶동영상 강의 보기<br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OGFgdro160I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2><a href="https://terms.naver.com/entry.nhn?docId=3431907&cid=58437&categoryId=58437">네이버 로 더 알아보기</a></h2>
-    <h3><a href="index.html">뒤로가기</a></h3>
+    <h3><a href="https://terms.naver.com/entry.nhn?docId=3431907&cid=58437&categoryId=58437">네이버로 더 알아보기</a></h3>
+    <h4><a href="index.html">뒤로가기</a></h4>
 </body>
 </html>
